@@ -9,6 +9,7 @@ namespace Lab2
             bool cont = true;
             while (cont == true)
             {
+                // Get the values
                 Console.WriteLine("Please enter the width of the room: ");
                 double width = Convert.ToDouble(Console.ReadLine());
 
@@ -18,10 +19,12 @@ namespace Lab2
                 Console.WriteLine("Please enter the height of the room: ");
                 double height = Convert.ToDouble(Console.ReadLine());
 
+                // Formulas
                 double area = width * length;
                 double perim = (width * 2) + (length * 2);
                 double volume = width * length * height;
 
+                // Write the results
                 Console.WriteLine("The area is " + area);
                 Console.WriteLine("The perimeter is " + perim);
                 Console.WriteLine("The volume is " + volume);
@@ -29,11 +32,12 @@ namespace Lab2
                 Console.WriteLine("Continue? y/n : ");
                 string contEnter = Console.ReadLine();
 
-                if (contEnter == "y")
+                // Check if they want to continue
+                if (contEnter == "y" || contEnter == "Y")
                 {
                     cont = true;
                 }
-                else if (contEnter == "n")
+                else if (contEnter == "n" || contEnter == "N")
                 {
                     cont = false;
                 }

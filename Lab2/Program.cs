@@ -9,6 +9,7 @@ namespace Lab2
             bool cont = true;
             while (cont == true)
             {
+                Console.WriteLine("Welcome to Grand Circus' Room Detail Generator!");
                 // Get the values
                 Console.WriteLine("Please enter the width of the room: ");
                 double width = Convert.ToDouble(Console.ReadLine());
